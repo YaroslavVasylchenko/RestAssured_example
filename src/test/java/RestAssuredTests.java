@@ -95,7 +95,7 @@ public class RestAssuredTests {
                 .contentType(ContentType.JSON)
                 .cookie(TOKEN, TOKEN_VALUE)
                 .body(body.toString())
-                .patch("/booking/{id}", 708);
+                .patch("/booking/{id}", 718);
         updatedBooking.prettyPrint();
         updatedBooking.then().statusCode(200);
     }
